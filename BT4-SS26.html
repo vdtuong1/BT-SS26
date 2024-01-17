@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let a = parseInt(prompt("Nhập số nguyên dương a:"));
+let b = parseInt(prompt("Nhập số nguyên dương b:"));
+
+
+let mang = [];
+
+for (let i = 1; i <= a; i++) {
+  if (i % b === 0) {
+    mang.push(i);
+  }
+}
+
+for (let i = 1; i <= b; i++) {
+  if (i % a === 0 && mang.indexOf(i) === -1) {
+    mang.push(i);
+  }
+}
+
+console.log("Các số chia hết cho " + b + " hoặc " + a + " trong khoảng từ 1 đến " + Math.max(a, b) + ":");
+console.log(mang);
+
+    </script>
+</body>
+</html>

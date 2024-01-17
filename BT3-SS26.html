@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let number = prompt("Nhap mot so nguyen bat ki");
+let numberList = [1, 5, 6, 2, 1, 5, 6, 8, 9,];
+let bien = 0;
+for(let i = 0; i < numberList.length; i++){
+    if (number==numberList[i]) {
+          bien++;
+    }
+}
+
+if(bien>1) {
+    console.log("So lan xuat hien la:" +bien)
+}else{
+    console.log("khong xuat hien trong mang");
+}
+
+</script>
+</body>
+</html>

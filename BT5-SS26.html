@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let mang = [5, 3, 7, 1, 9];
+
+console.log("Mảng trước khi đảo ngược: " + mang);
+
+for (let i = 0, j = mang.length - 1; i < j; i++, j--) {
+  let temp = mang[i];
+  mang[i] = mang[j];
+  mang[j] = temp;
+}
+
+console.log("Mảng sau khi đảo ngược: " + mang);
+
+    </script>
+</body>
+</html>
